@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fbf8f8;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+/* Navigation bar  */
+
+nav {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgb(19, 4, 103);
+    height: 110px;
+    align-items: center;
+    margin: 0;
+
+}
+
+.logo a {
+    font-size: 30px;
+    padding: 20px 10px;
+    color: rgb(226, 255, 6);
+    margin-left: 0px;
+    font-family: 'Montserrat';
+    /* font-family: "JetBrains Mono", monospace; */
+    font-weight: 800;
+    text-shadow: 1px 1px 3px rgb(229, 255, 0);
+    letter-spacing: 4px;
+
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 12px 10px;
+    margin: 0 0 0 5px;
+
+}
+
+ul li a,
+.product-li,
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: inline-flex;
+}
+
+.product-li {
+    background-color: rgb(19, 4, 103);
+    border: none;
+    padding: 12px 10px;
+    margin: 0 0 0 5px;
+
+
+}
+
+ul li:hover,
+.product-li:hover {
+    background-color: rgba(28, 10, 130, 0.8);
+    border-radius: 4px;
+    text-shadow: 1px 1px 15px rgba(255, 255, 255, 0.5);
+
+}
+
+.logo a:hover {
+    text-shadow: 3px 3px 15px rgb(255, 255, 0);
+}
+
+.marquee {
+    margin-bottom: 0;
+    background-image: linear-gradient(rgba(28, 10, 130, 0.3), #ffffff);
+    padding: 3px 0;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+/* Main page  */
+
+.backgroundimg img {
+    margin: 0;
+    height: 480px;
+    width: 100%;
+    /* border: 1px solid black; */
+    opacity: 0.9;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.h-cate {
+    font-size: 38px;
+    text-align: center;
+    padding: 0;
+    margin: 15px 0 0;
+    /* background: linear-gradient(to bottom, #fc6cb4, #5f86fa); */
+}
+
+.categories {
+    height: 450px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 1;
+
+
+}
+
+.categories .cate {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin: 60px 0;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    text-align: center;
+    /* background-position: top; */
+    flex-basis: 1;
+
+
+}
+
+.categories .cate img {
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+    flex-basis: 1;
+
+}
+
+.categories .cate img:hover {
+    opacity: 0.8;
+}
+
+h3 a {
+    color: black;
+}
+
+h3 a:hover {
+    opacity: 0.8;
+
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 6px;
+}
+
+.dropdown-content a {
+    float: none;
+    display: block;
+    background-color: rgb(19, 4, 103);
+    color: #fff;
+    padding: 12px 10px;
+    margin: 4px;
+}
+
+.dropdown-products:hover .dropdown-content {
+    display: block;
+    background-color: rgb(19, 4, 103);
+    opacity: 1;
+    z-index: 2;
+
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(28, 10, 130, 0.8);
+    border-radius: 4px;
+    text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-products {
+    display: inline-block;
+    z-index: 1;
+}
+
+.p-divs {
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.p-divs .and-sub img{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin: 60px 0 20px;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: center;
+    /* background-position: top; */
+}
+.p-divs .and-sub p {
+    text-align: center;
+}
+.p-divs .and-sub img {
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* iphone */
+
+.p-divs {
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.p-divs .ipn-sub img{
+    height: 215px;
+    width: 200px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin: 60px 0 20px;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: center;
+    /* background-position: top; */
+
+}
+
+.p-divs .ipn-sub p {
+    text-align: center;
+}
+.p-divs .ipn-sub img {
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* acc */
+
+.p-divs {
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.p-divs .acc-sub img{
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin: 60px 0 20px;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: center;
+    /* background-position: top; */
+
+}
+
+.p-divs .acc-sub p {
+    text-align: center;
+}
+.p-divs .acc-sub img {
+    border-radius: 10px;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+
+h2, .subtitle {
+    text-align: center;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+* p {
+    font-family:"Roboto Flex", sans-serif; 
+    font-size: 17.5px;
+    font-weight: 500;
+}
+
+* p:hover{
+    font-size: 19px;
+    cursor: pointer;
+}
+.acc p:hover{
+    font-size: 18.5px;
+    cursor: pointer;
+}
+
+* img:hover {
+    box-shadow: 2px 2px 2px  rgb(193, 193, 193);
+    cursor: pointer;
+    opacity: 0.9;
+}
