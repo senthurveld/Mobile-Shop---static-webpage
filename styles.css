@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* background-color: #fbf8f8; */
-    font-family: "Roboto Flex", sans-serif;
-    background-image: linear-gradient(to right, rgb(239, 239, 255), rgb(253, 255, 255));
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(to right, rgb(241, 254, 255), rgb(247, 246, 249), rgb(240, 252, 255));
 }
-
-* .main-page {}
-
 /* Navigation bar  */
 
 nav {
@@ -27,15 +24,16 @@ nav {
 }
 
 .logo a {
-    font-size: 30px;
+    font-size: 40px;
     padding: 20px 10px;
     color: rgb(226, 255, 6);
     margin-left: 0px;
-    font-family: 'Montserrat';
+    font-family: "Space Mono", monospace;
     /* font-family: "JetBrains Mono", monospace; */
-    font-weight: 800;
-    text-shadow: 1px 1px 3px rgb(229, 255, 0);
+    font-weight: 900;
+    text-shadow: 1px 1px 6px rgba(229, 255, 0, 0.522);
     letter-spacing: 4px;
+    font-style: italic;
 
 }
 
@@ -80,15 +78,15 @@ a {
 .marquee {
     margin-bottom: 0;
     background-image: linear-gradient(rgba(28, 10, 130, 0.3), #ffffff);
-    padding: 3px 0;
-    font-family: "Roboto Flex", sans-serif;
+    padding: 4px 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Main page  */
 
 .backgroundimg img {
     margin: 0;
-    height: 480px;
+    height: 540px;
     width: 100%;
     /* border: 1px solid black; */
     opacity: 0.9;
@@ -97,6 +95,7 @@ a {
     padding: 0;
     position: relative;
     z-index: 1;
+    margin-bottom: 20px;
 }
 
 .h-cate {
@@ -154,7 +153,10 @@ h3 a {
 
 h3 a:hover {
     opacity: 0.8;
+}
 
+.categories:hover {
+    cursor: default;
 }
 
 
@@ -309,14 +311,14 @@ h3 a:hover {
 h2,
 .subtitle {
     text-align: center;
-    font-family: "Roboto Flex", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 36px;
     font-weight: 600;
 
 }
 
 * p {
-    font-family: "Roboto Flex", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17.5px;
     font-weight: 500;
 }
@@ -331,7 +333,8 @@ h2,
     cursor: pointer;
 }
 
-.categories, .p-divs img:hover {
+.categories,
+.p-divs img:hover {
     box-shadow: 2px 2px 2px rgb(193, 193, 193);
     cursor: pointer;
     opacity: 0.9;
@@ -361,7 +364,7 @@ h2,
 .deals ul li {
     list-style: circle;
     color: #fbf8f8;
-    font-family: "Roboto Flex", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 26px;
     font-weight: 400;
     line-height: 40px;
@@ -377,13 +380,13 @@ h2,
 }
 
 .footer {
-    height: 250px;
+    height: 270px;
     width: 100%;
-    background-color: rgb(39, 38, 41);
+    background-color: rgb(40, 40, 45);
     color: white;
     display: flex;
     justify-content: space-around;
-    font-family: "Roboto Flex", sans-serif;
+    font-family: "Poppins", sans-serif;
     ;
 }
 
@@ -394,7 +397,7 @@ h2,
     width: 100%;
     text-align: center;
     padding: 0 10px;
-    font-family: "Roboto Flex", sans-serif;
+    font-family: "Poppins", sans-serif;
 
 }
 
@@ -412,18 +415,23 @@ h2,
 
 .footer ul li {
     line-height: 30px;
-    text-align: center;
+    text-align: left;
     margin: 0 -30px;
 }
 
 .footer-3 ul li {
-    text-align: right;
+    text-align: left;
+    margin-left: 0px;
+
+
 }
 
 .footer-2 ul li {
     line-height: 35px;
     padding: 2px 0px;
     cursor: pointer;
+    margin-left: 50px;
+
 
 }
 
@@ -439,5 +447,19 @@ i {
 
 .footer-1 ul li {
     text-align: left;
-    margin-left: 30px;
+    margin-left: 45px;
+}
+
+#add-icon {
+    /* height: 100px; */
+    /* width: 6px; */
+    display: inline;
+
+}
+
+.main-page h4,
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 10px rgb(89, 89, 89);
 }
