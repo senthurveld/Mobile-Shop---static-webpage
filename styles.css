@@ -331,7 +331,7 @@ h2,
     cursor: pointer;
 }
 
-* img:hover {
+.categories, .p-divs img:hover {
     box-shadow: 2px 2px 2px rgb(193, 193, 193);
     cursor: pointer;
     opacity: 0.9;
